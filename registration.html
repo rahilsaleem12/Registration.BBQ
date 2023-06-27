@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="fatherName">Father's Name:</label>
+    <input type="text" id="fatherName" name="fatherName" required>
+
+    <label for="contactNumber">Contact Number:</label>
+    <input type="tel" id="contactNumber" name="contactNumber" required>
+
+    <div class="checkbox-group">
+      <label ><h2>I Will Give</h2></label><br>
+      <input type="checkbox" id="checkbox1" name="checkbox1">
+      <label for="checkbox1">Meat</label>
+      <input type="checkbox" id="checkbox2" name="checkbox2">
+      <label for="checkbox2">Money</label>
+    </div>
+
+    <div class="radio-group">
+      <label><h2>I want to choose</h2></label><br>
+      <input type="radio" id="radio1" name="radio" value="radio1">
+      <label for="radio1">2kg meat</label>
+      <input type="radio" id="radio2" name="radio" value="radio2">
+      <label for="radio2">Rs.350</label>
+    </div>
+    <br><br>
+<div style="text-align: center; color: red;">Please Take Screenshoot befor register and send image in group (Flight F9)</div>
+    <input onclick="submit1()" type="submit" value="Register">
+<p style="text-align: center;">Developed By Rahil Saleem</p>
+  </form>
+  <script>
+    function submit1(){
+        alert("Thanks For Registation");
+    }
+  </script>
+</body>
+</html>
